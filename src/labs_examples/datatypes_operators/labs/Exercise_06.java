@@ -13,6 +13,10 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         // write code here
+        double radCyl = 3.14;
+        double hCyl = 5;
 
+        double resVol = 3.14 * (radCyl * radCyl) * 5;
+        System.out.println("The cylinder's volume is:" + resVol);
     }
 }
