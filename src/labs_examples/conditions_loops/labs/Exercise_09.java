@@ -8,4 +8,13 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main(String[] args) {
+        for (int count = 0; count <= 10; count++){
+            System.out.println("This will repeat 2 times!!");
+            if (count == 1){
+                break;
+            }
+        }
+    }
+
 }
