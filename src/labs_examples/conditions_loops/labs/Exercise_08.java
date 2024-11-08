@@ -13,7 +13,7 @@ public class Exercise_08 {
         int count = 1000;
 
         do{
-            
+
             System.out.println(count);
             count-=3;
 
