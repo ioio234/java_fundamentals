@@ -14,6 +14,29 @@ package labs_examples.conditions_loops.labs;
  *
  *
  */
-
+import java.util.Scanner;
 public class Exercise_05 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Insert the Lower Bound :");
+        int loBound = scanner.nextInt();
+
+        System.out.println("Insert the Upper Bound: ");
+        int upBound = scanner.nextInt();
+
+        float sum = 0;
+        float avg = 0;
+
+        for (int count = loBound; count <= upBound; count++ ){
+            sum += count;
+            avg = sum/upBound;
+        }
+
+
+        System.out.println("The sum is: " + sum);
+        System.out.println("The avarage is: " + avg);
+
+    }
 }
