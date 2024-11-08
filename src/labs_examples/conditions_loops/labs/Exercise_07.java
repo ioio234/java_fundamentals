@@ -13,5 +13,28 @@ package labs_examples.conditions_loops.labs;
  *
  */
 
+import java.util.Scanner;
+
+
+
 public class Exercise_07 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Insert a word: ");
+        String word = scanner.next();
+
+        int count = 0;
+
+        while(count <= word.length() - 1){
+            if (word.charAt(count) == 'a' || word.charAt(count) == 'e' || word.charAt(count) == 'i' || word.charAt(count) == 'o' || word.charAt(count) == 'u'){
+                System.out.println("found the first vowel at index: " + count);
+                System.out.println("The vowel is: " + word.charAt(count));
+                break;
+            }
+            count++;
+        }
+
+    }
 }
