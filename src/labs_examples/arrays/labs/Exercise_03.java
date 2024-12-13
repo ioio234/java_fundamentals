@@ -18,6 +18,21 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        
+
+        int[][] arr2d = new int[5][5];
+        int n = 3;
+
+        for (int i = 0; i < arr2d.length; i++) {
+            for (int j = 0; j < arr2d[i].length; j++) {
+
+                arr2d[i][j] = n;
+                System.out.print(arr2d[i][j]);
+                System.out.print(" ");
+                n = n + 3;
+            }
+
+            System.out.println();
+
+        }
     }
 }
